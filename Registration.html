@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link href="styles/styles.css" rel="stylesheet"/>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<script src="js/registration.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Registration Form</h1>
+	</header>
+	<div class="topnav" id="myTopnav"> <!-- Defines the nav bar as topnav as it is called as in the js and css -->
+  		<a href="Index.html">Home</a> <!-- Defines this current page as active -->
+ 		<a href="Registration.html" class="active">Register</a> <!-- hrefs contain the link to the other pages, but are displayed as the text -->
+  		<a href="Order.html">Order</a>
+  		<a href="Features.html">Features</a>
+</div>
+<div class ="Overlay"></div>
+	<form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+		<fieldset>
+			<legend>Customer's Account Details</legend>
+			<div class="textinput">
+				<label for="username">Username:</label>
+				<input id="username" type="text" name="username" />
+			</div>
+			<div class="textinput">
+				<label for="password1">Password:</label>
+				<input id="password1" type="password" name="password1" />
+			</div>
+			<div class="textinput">
+				<label for="password2">Retype - Password:</label>
+				<input id="password2" type="password" name="password2" />
+			</div>
+			<div class="textinput">
+				<label for="email">Email:</label>
+				<input id="email" type="email" name="email">
+			</div>
+			<div class="textinput">
+				<label for="postcode">Postcode:</label>
+				<input id="postcode" type="number" name="postcode" />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Customer's Information</legend>
+			<div class="textinput">
+				<label for="name">Name:</label>
+				<input id="name" type="text" name="name" />
+			</div>
+			<div class="radioinput">
+				<legend>Gender:</legend>
+				<input id="males" type="radio" name="gender" value="M" />
+				<label for="male">Male</label>
+				<input id="female" type="radio" name="gender" value="F" />
+				<label for="female">Female</label>
+			</div>
+			<div class="radioinput">
+				<legend>Choose a Store:</legend>
+				<select name="location" id="location">
+					<option value="Melbourne" selected="Selected">Melbourne</option>
+					<option value="Sydney">Sydney</option>
+					<option value="Queensland">Queensland</option>
+				</select>
+				<div class="radioinput">
+				<label>Select Your Favourite Ice Cream: </label>
+				<input type="checkbox" id="icecream1" value="Vanilla Bean" name="FavouriteIceCream" /> Vanilla Bean
+				<input type="checkbox" id="icecream2" value="Chocolate Fudge Brownie" name="FavouriteIceCream" /> Chocolate Fudge Brownie
+				<input type="checkbox" id="icecream3" value="Mint Chocolate Chip" name="FavouriteIceCream" /> Mint Chocolate Chip
+			</div>
+			</div>
+		</fieldset>
+		<div class="buttoninput">
+            <input type="submit" value="Submit" />
+			<input type="reset" value="Reset" />
+		</div>
+	</form>
+</body>
+
+</html>

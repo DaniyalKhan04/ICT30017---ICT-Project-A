@@ -1,0 +1,320 @@
+body, h1, p, table, th, td, a, img {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* General body styling */
+body {
+    background-color: #f2f2f2; /* Light grey background */
+    color: #333; /* Dark grey text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #ffcc80; /* Light orange background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333; /* Dark grey text */
+    text-align: center;
+}
+
+/* Navigation styling */
+.topnav 
+{
+  position: absolute;
+  top: 8.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: yellow;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding: 0px 0px;
+}
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-collapse: collapse;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.topnav a.active {
+  background-color: orange;
+  color: #000000;
+}
+
+}
+
+/* About Sweet Life styling */
+aside {
+    text-align: center;
+    margin: 50px auto; /* Center the aside */
+    padding: 0 20px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+}
+
+aside h3 {
+    color: black; /* Red header */
+    margin-bottom: 20px;
+}
+
+aside p {
+    margin-bottom: 20px;
+}
+
+/* Sweet Life's Menu styling */
+section {
+    text-align: center;
+}
+
+section table {
+    margin: 0 auto 50px; /* Center the table */
+    border-collapse: collapse;
+    width: 80%;
+    border: 2px solid #ff6666; /* Red border */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+}
+
+section table caption h1 {
+    color: black; 
+    margin-bottom: 20px;
+}
+
+section table th,
+section table td {
+    border: 2px solid #ff6666; /* Red border */
+    padding: 10px;
+}
+
+section table th {
+    background-color: #ffcc80; /* Light orange header background */
+    color: #333; /* Dark grey text */
+}
+
+section table td {
+    background-color: #fff; /* White background */
+}
+
+section table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+section table tbody tr:hover {
+    background-color: #ffe0b3; /* Light orange background on hover */
+}
+.image-container img {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+/* Using CSS to style a window 
+*/
+
+.window { /* apply style to HTML elements having a tooltip as class name */
+    display: none;/* window is initially not visible */
+    z-index: 2; /* place window on top */
+    position: fixed;/* place window on a fixed location  */
+    top:50%; /* place the top left corner of the window at  */
+    left: 50%;/* the centre of the screen */
+    margin-top: -5em;/* adjust the windows by movin it up */ 
+    margin-left: -11em;/* then moving it to the left to the centre of the window */
+    background-color: lightblue; /* uses a lightblue background */
+    border-radius: 15px;/* create a rounded corner */
+    border: solid 1px blue;
+    box-shadow:10px 10px 5px #888;
+    padding: 5px;/* add a 5px spacing around the text */
+    width: 22em;
+    height: 10em;
+}
+
+/* sets up a transparent pane on the screen, preventing the user to click on any
+   items at layer 0 on the screen */
+#scrnOverlay {
+    z-index: 1;/* use layer 1 to overlay everything in layer 0 */
+    visibility: hidden;
+    position:fixed;/* Block out the whole screen */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    opacity: 0.5;
+ }
+body {
+    background-color: #fff4e6; /* Light creamy color */
+}
+
+form {
+    width: 50em;
+    background-color: #fff2f4; /* Light pink */
+    margin-top: 70px;
+    border-radius: 15px; /* Add rounded corners for a softer look */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+header {
+    background-color: #ff99c8; /* Light strawberry pink */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px;
+    text-align: center; /* Centered text */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+nav {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    background-color: #ffb3ba; /* Light peachy pink */
+    border-style: solid;
+    border-color: #ffb3ba;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+nav li {
+    display: inline; /* Display list items inline */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    background-color: #ffdfba; /* Light apricot */
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0.2em; /* Space between links */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+nav a:hover {
+    background-color: #ff99c8; /* Light strawberry pink */
+}
+
+label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    margin-right: 1em;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    color: #663399; /* Plum color for fun */
+}
+
+input {
+    width: 50%;
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ffb3ba; /* Light pink border */
+}
+
+.textinput {
+    margin: 10px;
+}
+
+.radioinput fieldset {
+    border: none;
+}
+
+.radioinput legend {
+    float: left;
+    text-align: right;
+    width: 9em;
+    margin-right: 1em;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    color: #663399; /* Plum color for fun */
+}
+
+.radioinput input {
+    width: 2em;
+}
+
+.radioinput label {
+    float: none;
+    text-align: left;
+}
+
+.buttoninput {
+    text-align: right;
+}
+
+.buttoninput input {
+    width: auto;
+    margin-top: 5px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ff99c8; /* Light strawberry pink */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.buttoninput input:hover {
+    background-color: #ff80a5; /* Darker pink on hover */
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=email]:focus {
+    background-color: #ffffcc; /* Light yellow */
+}
+
+.current {
+    background-color: #ff99c8; /* Light strawberry pink */
+}
+
+footer {
+    float: left;
+    font-style: italic;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center; /* Centered text */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    color: #663399; /* Plum color for fun */
+}
+
+
+
+
+
