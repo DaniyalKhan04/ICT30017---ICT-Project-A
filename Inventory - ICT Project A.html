@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory / Medication Report</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    .header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    .nav button {
+      background-color: lightgray;
+      border: none;
+      padding: 10px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .section div {
+      background-color: lightgray;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    .medication-box {
+      background-color: #ccc;
+      height: 200px;
+      margin-top: 10px;
+    }
+
+    .update-btn {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .update-btn button {
+      background-color: lightgray;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    Inventory / Medication Report
+  </div>
+
+  <div class="container">
+    <div class="nav">
+      <div class="logo">logo</div>
+      <button>Home</button>
+      <button>About</button>
+      <button>Service</button>
+      <button>Login</button>
+    </div>
+
+    <div class="section">
+      <div>Item</div>
+      <div>Category</div>
+      <div>Stock</div>
+      <div>Suppliers</div>
+    </div>
+
+    <h3>Medication Management</h3>
+    <div class="medication-box"></div>
+
+    <div class="update-btn">
+      <button>Update Medication</button>
+    </div>
+
+    <div class="footer">
+      Footer
+    </div>
+  </div>
+
+</body>
+</html>
